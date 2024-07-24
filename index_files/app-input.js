@@ -36,7 +36,7 @@ const setUp = () => {
 
 
     const fireflies = [];
-    const numFireflies = 0;
+    const numFireflies = 8;
 
     class Firefly {
         constructor() {
@@ -44,7 +44,7 @@ const setUp = () => {
             this.y = Math.random() * canvas.height;
             this.size = Math.random() * 15 + 1; // Ensure size is not zero
             this.angle = Math.random() * 2 * Math.PI;
-            this.speed = Math.random() * 0.2 + 0.5; // Ensure speed is not zero
+            this.speed = Math.random() * 0.15 + 0.5; // Ensure speed is not zero
         }
 
         update() {
