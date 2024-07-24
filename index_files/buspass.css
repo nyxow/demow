@@ -92,7 +92,7 @@ nav{
     padding-top: 1px;
 }
 .wrapper{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 735px;
     margin: 10px;
 }
@@ -139,22 +139,65 @@ nav{
 }
 
 #animated{
+
     margin-top: 20px;
     background-color: var(--sea-buckthorn);
-    /* background-image: url("img/background.png"); */
+    
     background-repeat: no-repeat;
     background-size: cover;
     padding: 8px 0 8px 0;
+
+    /* background-image: url("img/background.png"); */
+
+   
+}
+
+#cant{
+    width: 90.1vw;
+    height: 10vh;
+    perspective: 100px; /* To add a 3D effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 10s infinite;
+}
+
+#fireflyCanvas {
+    border: 2px solid rgba(0, 0, 0, 0); /* Optional: to highlight the rectangle */
+    background: rgba(255, 255, 255, 0);
+    width: 60.05vw;
+    height: 13vh;
+    display: block;
+    transform: translateZ(0); /* Ensure it maintains 3D transformation */
+    z-index: 0;
+    
+}
+
+#time{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    text-align: center;
+    pointer-events: none;
 }
 
 #time, .word-holder{
     text-align: center;
-    color: black;
+    color: rgb(0, 0, 0);
+    
 }
+
 .word-holder{
     font-size: 2.1em;
     font-weight: bold;
+    
+    display: show;
+   
 }
+
 .countdown{
     margin-top: 20px;
 }
@@ -171,9 +214,7 @@ nav{
     color: black;
     font-weight: bold;
 }
-.word-holder{
-    display: none;
-}
+
 .ticket_id{
     margin: 20px;
     color: black;
@@ -217,3 +258,5 @@ footer{
   .clockwise {
     animation: clockwise 4s cubic-bezier(0.42, 0, 0.58, 1) infinite;
   }
+
+

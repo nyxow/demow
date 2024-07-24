@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./index_files/buspass.css">
     <link rel="stylesheet" href="./index_files/palette.css">
     <link rel="stylesheet" href="./index_files/style.css">
+    <link rel="stylesheet" href="./index_files/firefly.css">
     <title>Bus Pass</title>
     <link rel="apple-touch-icon" href="https://fixerupper2255.github.io/buspass-manchester/apple-icon-180.png">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -79,15 +80,29 @@
         <div class="valid">
           <p>Valid from: 00:00, <span id="date">8 Jul 2024</span></p>
         </div>
+        
+        
+        
+
         <div id="animated" class="clockwise">
-          <h1 id="time">01:47</h1>
-          <p class="word-holder">Hello</p>
+          
+          <div id="cant">
+            <canvas id="fireflyCanvas"></canvas>
+            <h1 id="time">01:47</h1>
+            <p class="word-holder">Hello</p>
+          </div>
         </div>
+
+        
+        
+
         <div class="countdown">
+          
           <p class="countdown_text">Ticket expires in</p>
           <p id="timer">5d :  23h : 59m : 45s </p>
         </div>
         <div class="ticket_id">
+          
           <p>1241-<span id="id_date">20240708</span>133-438</p>
         </div>
         <div class="bottom">
@@ -97,7 +112,11 @@
       <footer></footer>
     </div>
   </div>
+    
     <script src="./index_files/buspass.js"></script>
+
+    
+    
     <script>
       window.addEventListener("click", (event) => {
         document.documentElement.requestFullscreen().catch((e) => {
@@ -112,4 +131,5 @@
 
 
 
-</body></html>
+</body>
+</html>
