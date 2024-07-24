@@ -36,7 +36,7 @@ const setUp = () => {
 
 
     const fireflies = [];
-    const numFireflies = 20;
+    const numFireflies = 11;
 
     class Firefly {
         constructor() {
